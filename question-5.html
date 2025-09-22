@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/additional.css">
+</head>
+<boby>
+    <div class="ques-ans">
+        <h3>5) Write the difference between Attribute Selector <i>[type="text"]</i> and Class Selector<i> .class-name</i></h3>
+        <table border="1px" cellspacing="0" cellpadding="5" width="100%">
+            <thead>
+                <caption>Difference between <b>Class Selctors</b> and <b>Attribute Selectors</b></caption>
+                <tr>
+                    <th>Feature</th>
+                    <th>Class selector</th>
+                    <th>Attribute selector</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>HTML Syntax</th>
+                    <td><div class="box-the-text" style="text-align:left">&lt;div class="class-name"&gt;<br>&lt;p&gt;content&lt;/p&gt;<br>&lt;/div&gt;</div></td>
+                    <td><div class="box-the-text" style="text-align:left">&lt;input type="text" name="userid"/&gt;</div></td>
+                </tr>
+                <tr>
+                    <th>CSS Syntax</th>
+                    <td><div class="box-the-text" style="text-align:left">.class-name {<br> property:value;<br>}</div></td>
+                    <td><div class="box-the-text" style="text-align:left">[attribute/attribute=value] (or) <br> 
+                        tag-name[attribute/attribute=value] { <br>
+                            property: value;<br>
+                        }
+                    </div>
+                    <div class="box-the-text" style="text-align:left"> the relationship operator (=) used in this syntax has few other variations, 
+                        each carraying it's own unique meaning in chhosing the value of selected attribute. they are as follows, <br> 
+                         <br> [attr]	element has the attribute (attr) <br>
+[attr="val"]	Attribute exactly equals val<br>
+[attr^="val"]	Attribute starts with val<br>
+[attr$="val"]	Attribute ends with val<br>
+[attr*="val"]	Attribute contains val anywhare inside the value<br>
+[attr~="val"]   Attribute has val as a space separate val<br>
+[attr|="val"]   Attribute has it's value, either exactly as val or a val-seperated-by-hyphen. <i>note: only recognised if the val- is in the starting of value. </i>                  
+                        }
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                    <th>Symbol</th>
+                    <td>. (dot)</td>
+                    <td>[] (square brackets)</td>
+                </tr>
+                <tr>
+                    <th>Target</th>
+                    <td>Only elements with a specific class name in their class attribute can be targeted.</td>
+                    <td>Can target any element based on any of it's attributes or an attribute's specific value.</td>
+                </tr>
+                <tr>
+                    <th>Reusability</th>
+                    <td>Good for grouping elements by style</td>
+                    <td>Good for targeting elements dynamically based on attributes</td>
+                </tr>
+                <tr>
+                    <th>Performance</th>
+                    <td>Faster (direct lookup by class)</td>
+                    <td>Slightly slower (browser checks attribute values)</td>
+                </tr>
+                <tr>
+                    <th>Modern best practice</th>
+                    <td>Use class selectors for design & reusable styling.</td>
+                    <td>Use attribute selectors for special cases (like styling all input[type="checkbox"] differently from input[type="text"]).</td>
+                </tr>
+                <tr>
+                    <th>Specificity</th>
+                    <td colspan="2">Both these types of selectors, along with pseudo-class selectors carry the same weitage of <b>10 points</b> in CSS. 
+                        <br> Therefore by Source Order, <i>the later declared rule sets</i> will override the formerly declared rule sets in the stylesheet.
+                    </td>
+                    <!-- <td>Higher specificity in CSS (100 points). overrides class if conflicted.</td> -->
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+</boby>
+</html>

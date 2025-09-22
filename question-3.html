@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/additional.css">
+</head>
+<boby>
+    <div class="ques-ans">
+        <h3>3) What is the difference between class selectors and id selectors in CSS?</h3>
+        <table border="1px" cellspacing="0" cellpadding="5" width="100%">
+            <thead>
+                <caption>Difference between class selctors and id selectors</caption>
+                <tr>
+                    <th>Feature</th>
+                    <th>class selector</th>
+                    <th>id selector</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>HTML Syntax</th>
+                    <td><div class="box-the-text" style="text-align:left">&lt;div class="class-name"&gt;<br>&lt;p&gt;content&lt;/p&gt;<br>&lt;/div&gt;</div></td>
+                    <td><div class="box-the-text" style="text-align:left">&lt;button id="id-name"&gt; Enter <br>&lt;/button&gt;</div></td>
+                </tr>
+                <tr>
+                    <th>CSS Syntax</th>
+                    <td><div class="box-the-text" style="text-align:left">.class-name {<br> property:value;<br>}</div></td>
+                    <td><div class="box-the-text" style="text-align:left">#id-name {<br> property:value;<br>}</div></td>
+                </tr>
+                <tr>
+                    <th>Symbol</th>
+                    <td>. (dot)</td>
+                    <td># (hash)</td>
+                </tr>
+                <tr>
+                    <th>Reusability</th>
+                    <td>can be reused on multiple elements of multiple kinds in same/different pages</td>
+                    <td>should be applied only to one element per page, and always recommended for the same kind of element (by logic) only if reused in another page.</td>
+                </tr>
+                <tr>
+                    <th>Purpose</th>
+                    <td>Mostly for design / presentation / reusable styling, but can also help with logic on multiple elements.
+                        <ul>
+                            <li>Group styling (buttons, menus, highlights, etc.).</li>
+                            <li>Reusable presentation features.</li>
+                        </ul>
+                    </td>
+                    <td>mostly logic / structure / unique reference. 
+                        <ul>
+                            <li>Identifying one specific element.</li>
+                            <li>Logic hooks (JavaScript: getElementById).</li>
+                            <li>Page navigation through &lt;a&gt; anchor tags.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Modern best practice</th>
+                    <td>Use classes for almost all CSS styling.</td>
+                    <td>Reserve IDs for unique elements you need to reference in JavaScript or anchors.</td>
+                </tr>
+                <tr>
+                    <th>Specificity</th>
+                    <td>Lower specificity in CSS (10 points)</td>
+                    <td>Higher specificity in CSS (100 points). overrides class if conflicted.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</boby>
+</html>

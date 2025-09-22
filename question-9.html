@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/additional.css">
+</head>
+<boby>
+    <div class="ques-ans">
+        <h3>9) Write CSS to select all list items &lt;li&gt; that are the first child of their parent and make them bold.</h3>
+        <table border="1px" cellspacing="0" cellpadding="5" width="100%">
+            <thead>
+                <caption>Applying <b>Pseudo-class (:first-child)</b> in css</caption>
+                <!-- <tr>
+                    <th>HTML part</th>
+                    <th>class selector</th>
+                </tr> -->
+            </thead>
+            <tbody>
+                <tr>
+                    <th>HTML part</th>
+                    <td><div class="box-the-text" style="text-align: left;">
+                         &lt;ul&gt;
+                            &lt;li&gt;First Line&lt;/li&gt;<br>
+                            &lt;li&gt;Second Line&lt;/li&gt;<br>
+                            &lt;li&gt;Second Line&lt;/li&gt;<br>
+                             &lt;/ul&gt;<br>
+                             &lt;ol&gt;<br>
+                            &lt;li&gt;First Line&lt;/li&gt;<br>
+                            &lt;li&gt;Second Line&lt;/li&gt;<br>
+                            &lt;li&gt;Second Line&lt;/li&gt;<br>
+                             &lt;/ol&gt;<br>
+                    </div></td>
+                </tr>
+                <tr>
+                    <th>CSS part</th>
+                    <td><div class="box-the-text" style="text-align: left;">
+                        li:first-child {<br>
+                        font-weight: bold;<br>
+                        }<br>
+                    </div></td>
+                </tr>
+                <tr>
+                    <th>Output</th>
+                    <td><img src="./images/pseudo-class-first-child.png" alt="example for pseudo element first-child"></td>
+                </tr>
+                <!-- 
+                <tr>
+                    <th>Usage</th>
+                    <td>can be reused on multiple elements of multiple kinds in same/different pages</td>
+                    <td>should be applied only to one element per page, and always recommended for the same kind of element (by logic) only if reused in another page.</td>
+                </tr>
+                <tr>
+                    <th>purpose</th>
+                    <td>Mostly for design / presentation / reusable styling, but can also help with logic on multiple elements.
+                        <ul>
+                            <li>Group styling (buttons, menus, highlights, etc.).</li>
+                            <li>Reusable presentation features.</li>
+                        </ul>
+                    </td>
+                    <td>mostly logic / structure / unique reference. 
+                        <ul>
+                            <li>Identifying one specific element.</li>
+                            <li>Logic hooks (JavaScript: getElementById).</li>
+                            <li>Page navigation through &lt;a&gt; anchor tags.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Modern best practice</th>
+                    <td>Use classes for almost all CSS styling.</td>
+                    <td>Reserve IDs for unique elements you need to reference in JavaScript or anchors.</td>
+                </tr>
+                <tr>
+                    <th>specificity</th>
+                    <td>Lower specificity in CSS (10 points)</td>
+                    <td>Higher specificity in CSS (100 points). overrides class if conflicted.</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+</boby>
+</html>

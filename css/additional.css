@@ -1,0 +1,13 @@
+.box-the-text {
+  border: 2px solid #333;     /* draw a border */
+  padding: 2px 15px;         /* spacing inside */
+  margin: 20px auto;          /* spacing outside, auto = center horizontally */
+  width: fit-content;         /* box shrinks to fit the text */
+  background-color: #f9f9f9;  /* light background */
+  border-radius: 6px;         /* rounded corners */
+  font-family: monospace;     /* code-style font */
+}
+
+table {
+    text-align: center;
+}
