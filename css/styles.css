@@ -21,6 +21,8 @@ header nav ul li a {
     background-color: blueviolet;
     padding: 4px 10px;
     
+<!-- trying to make the nav menus responsive to mobile screen -->    
+    flex-wrap: wrap;
     text-decoration: none;  
     border-radius: 15px;
 }
